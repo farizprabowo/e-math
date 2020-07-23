@@ -1,0 +1,179 @@
+<script type="text/javascript">
+  if (screen.width <= 699) {
+  document.location = "mobile.html";
+  }
+</script>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- buat judul tab dan impor ikon tab -->
+    <title>My e-Math Lab | Temperatur</title>
+    <link rel="icon" href="media/tab.png" sizes="16x16" type="image/png">
+    <!-- impor semua css dan javascript untuk slide logo mitra kerjasama -->
+    <script src="interface/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="interface/slide.js" type="text/javascript"></script>
+    <script src="interface/slick.js"></script>
+    <script src="interface/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="design/slide.css">
+    <!-- impor semua css untuk penampilan website -->
+    <link rel="stylesheet" href="design/stylesheet.css">
+    <link rel="stylesheet" href="design/stylesheet-konversi.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- bagian float help -->
+    <div class="help">
+      <a target="_blank" href="https://web.whatsapp.com/send?phone=6281234567890&text=Halo%20admin!%20Saya%20mau%20tanya%20.%20.%20.">
+        <div class="float-help">
+          <div class="phone"><span class="fa fa-phone"></span>Butuh bantuan?</div>
+        </div>
+      </a>
+    </div>
+    <!-- bagian menu header -->
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <a href="index.html">
+            <img class="logo" src="media/logo-header.png">
+          </a>
+        </div>
+        <!-- bagian menu paling atas -->
+        <!-- <span class="fa fa-bars menu-icon"></span> -->
+        <div class="header-right">
+          <a href="kalkulator.html"><span class="fa fa-calculator"></span>Kalkulator</a>
+          <a href="berat.html"><span class="fa fa-balance-scale"></span>Berat</a>
+          <a href="panjang.html"><span class="fa fa-road"></span>Panjang</a>
+          <a href="temperatur.html" style="background-color:#f04b4c"><span class="fa fa-leaf"></span>Temperatur</a>
+          <a href="#profil"><span class="fa fa-user"></span>Tentang</a>
+        </div>
+      </div>
+    </header>
+    <!-- bagian latar belakang video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="media/video.mp4" type="video/mp4">
+    </video>
+    <!-- bagian wacana utama website -->
+    <div class="top-wrapper">
+      <div class="container">
+        <h1>KONVERSI TEMPERATUR</h1>
+        <p><a class="beranda" href="index.html">Beranda</a></p>
+        <div class="tools">
+          <table>
+            <tr>
+              <td>
+                <div class="container">
+                  <div id="input">
+                    <select name="input-value" id="inputUnit">
+                      <option value="0">-- Pilih Satuan Temperatur --</option>
+                      <option value="1">Celsius (&degC)</option>
+                      <option value="2">Fahrenheit (&degF)</option>
+                      <option value="3">Kelvin (&degK)</option>
+                      <option value="4">Rankine (&degRa)</option>
+                      <option value="5">Réaumur (&degRé)</option>
+                    </select>
+                  </div>
+                  <br />
+                  <input type="number" id="inputNumber" placeholder="Angka default 0..." value="">
+                  <div id="output">
+                      <div class="card" id="reaumurCard">
+                        <h3>Réaumur (&degRé)</h3>
+                        <h4 id="toReaumur"></h4>
+                      </div>
+                      <div class="card" id="celsiusCard">
+                        <h3>Celsius (&degC)</h3>
+                        <h4 id="toCelsius"></h4>
+                      </div>
+                      <div class="card" id="fahrenheitCard">
+                        <h3>Fahrenheit (&degF)</h3>
+                        <h4 id="toFahrenheit"></h4>
+                      </div>
+                      <div class="card" id="kelvinCard">
+                        <h3>Kelvin (&degK)</h3>
+                        <h4 id="toKelvin"></h4>
+                      </div>
+                      <div class="card" id="rankineCard">
+                        <h3>Rankine (&degRa)</h3>
+                        <h4 id="toRankine"></h4>
+                      </div>
+                      <div class="footnote">
+                        <p>* Tanda '.' merupakan tanda bilangan yang berbentuk desimal.</p>
+                      </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <script type="text/javascript" src="interface/script-temperatur.js"></script>
+        <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <!-- bagian instruktur yang bekerja di platform -->
+    <div id="profil" class="profil-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>TENTANG PEMBUAT</h2>
+          <h2>DTS Batch 2 - Tugas Individu Kalkulator</h2>
+        </div>
+        <div class="profil">
+          <div class="teks-kiri">
+            <h1>Fariz Prabowo</h1>
+            <h4><span class="fa fa-globe"></span> Pekanbaru, Riau, Indonesia</h4>
+            <h4><span class="fa fa-hand-o-up"></span> No. Registrasi: 0447977041-55</a></h4>
+            <p>Saya suka membangun sebuah situs web, khususnya dalam bidang HTML, CSS, JavaScript, dan juga Python. Keahlian ini saya dapatkan dari program beasiswa KOMINFO Digital Talent Scholarship yang bekerja-sama dengan Progate.</p>
+            <ul>
+                <li><a target="_blank" href="https://facebook.com"><span class="fa fa-facebook"></span></a></li>
+                <li><a target="_blank" href="https://twitter.com"><span class="fa fa-twitter"></span></a></li>
+                <li><a target="_blank" href="https://instagram.com"><span class="fa fa-instagram"></span></a></li>
+                <li><a target="_blank" href="https://linkedin.com"><span class="fa fa-linkedin"></span></a></li>
+            </ul>
+          </div>
+          <div class="gambar-kanan">
+              <img src="media/profil.jpg" alt="profile image">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bagian mitra kerjasama -->
+    <div class="mitra-wrapper">
+      <div class="container">
+        <div class="heading">
+          <img src="media/logo-mitra.png">
+          <h2>BEKERJA-SAMA DENGAN</h2>
+          <h3>
+            <div class="container-logo">
+              <section class="customer-logos slider">
+                <div class="slide"><img src="media/mitra01.png"></div>
+                <div class="slide"><img src="media/mitra02.png"></div>
+                <div class="slide"><img src="media/mitra03.png"></div>
+                <div class="slide"><img src="media/mitra04.png"></div>
+                <div class="slide"><img src="media/mitra05.png"></div>
+                <div class="slide"><img src="media/mitra06.png"></div>
+                <div class="slide"><img src="media/mitra07.png"></div>
+                <div class="slide"><img src="media/mitra08.png"></div>
+              </section>
+            </div>
+          </h3>
+        </div>
+        <span class="btn mitra" onclick="kotakPesan()">Mitra Kerjasama Selengkapnya</span>
+        <script>
+          function kotakPesan() {
+            alert("Sedang dalam perbaikan. Silakan coba nanti!");
+          }
+        </script>
+      </div>
+    </div>
+    <!-- bagian footer -->
+    <footer>
+      <div class="container">
+        <a href="#"><img src="media/atas.png"></a>
+        <img src="media/logo-footer.png">
+        <p>Pusat Belajar Matematika &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script></p>
+      </div>
+    </footer>
+  </body>
+</html>
