@@ -1,0 +1,75 @@
+select {
+  width: 100%;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  border: 3px solid;
+  font-size: 19px;
+  background-color: #252525;
+  color: #e7e7e7;
+  height: 40px;
+  padding-left: 10px;
+  font-family: interfaceFont;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  height: 30px;
+  border-radius: 5px;
+  border: 3px solid;
+  font-size: 19px;
+  margin-bottom: 15px;
+  text-indent: 10px;
+  background-color: #252525;
+  color: #e7e7e7;
+  height: 40px;
+  font-family: interfaceFont;
+}
+  
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  color: #e7e7e7;
+  font-style: italic;
+}
+  
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  color: #e7e7e7;
+  font-style: italic;
+}
+  
+/* Microsoft Edge */
+::-ms-input-placeholder {
+  color: #e7e7e7;
+  font-style: italic;
+}
+  
+option {
+  text-indent: 10px;
+}
+  
+.card {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: auto;
+  color: #f04b4c;
+  border: 3px solid #3d6098;
+}
+  
+.card h3 {
+  float: left;
+  margin: 0px;
+}
+  
+.card h4 {
+  color: #e7e7e7 !important;
+  float: right;
+  margin: 0px;
+}
+
+.footnote {
+  color: #e7e7e7;
+  align-content: center;
+}

@@ -1,0 +1,41 @@
+/* website utama */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: interfaceFont;
+  src: url(font.ttf);
+}
+
+body {
+  padding: 10%;
+  font-family: interfaceFont;
+  background-color: #e7e7e7;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+img {
+  width: 60%;
+}
+
+@keyframes color-change {
+  0% { color: #252525; }
+  50% { color: #f04b4c; }
+  100% { color: #213159; }
+}
+
+h1 {
+  color: #213159;
+  font-weight: bold;
+  animation: color-change 1s infinite;
+}
+
+p {
+  color: #252525;
+}
